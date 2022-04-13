@@ -1,0 +1,84 @@
+/*quitar padding y margen*/
+html,body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+
+body{
+   background-color: black;
+    display: flex;/*para que el div este centrado*/
+    justify-content: center;/*para que este centrado horizontalmente*/
+    align-items: center;/*para centrar verticalmente*/
+    height: 100vh;/*altura*/
+}
+
+#quiz{
+
+    background-color: black;
+    width: 30rem;/*rem Esto significa que el tamaño de letra no aumenta en cada nivel sucesivo de anidamiento*/
+    padding: 4rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5rem;
+    
+  
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2px 0;
+}
+h2{
+    color: white;
+}
+#question{
+    font-size: 1.7rem;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.button{
+    background-color: white;
+    color: black;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 8rem;
+    padding: 10px 20px;
+    margin: 10px 40px 10px;
+    outline: 0;
+}
+.button:hover{
+    cursor: pointer;/*muestra una mano para pinchar*/
+    background:  rgb(124, 114, 255);
+    color: rgb(255, 255, 255) ;
+}
+#progress{
+    font-size: 20px;
+    color: white;
+}
+#js{
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 250px; 
+}
+#img{
+    top: auto;
+    position: relative;
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    animation-direction:reverse ;
+}
+
+@keyframes mianimacion{
+  
+    50% {left:300px; top:300px;}
+    
+
+}
+
+
